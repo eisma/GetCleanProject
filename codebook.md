@@ -93,51 +93,51 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+- mean(): Mean value
+- std(): Standard deviation
+- mad(): Median absolute deviation 
+- max(): Largest value in array
+- min(): Smallest value in array
+- sma(): Signal magnitude area
+- energy(): Energy measure. Sum of the squares divided by the number of values. 
+- iqr(): Interquartile range 
+- entropy(): Signal entropy
+- arCoeff(): Autorregresion coefficients with Burg order equal to 4
+- correlation(): correlation coefficient between two signals
+- maxInds(): index of the frequency component with largest magnitude
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+- skewness(): skewness of the frequency domain signal 
+- kurtosis(): kurtosis of the frequency domain signal 
+- bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+- angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
@@ -145,6 +145,9 @@ The complete list of variables of each feature vector is available in 'features.
 
 ======================================================================================
 ======================================================================================
+
+Final data set
+==============
 
 The final (tidy) dataset called "averages" contains only one file with 180 rows and 68 columns.
 
@@ -156,73 +159,73 @@ There are several differences compared to the original datasets.
 
 The variables in details:
 
-col 1: activity: characters, 6 levels, "laying", "sitting", "standing", "walking", "walkingdownstairs", "walkingupstairs"
-col 2: subject: numeric, 30 levels, 1:30
-col 3: group average of tBodyAcc-mean()-X
-col 4: group average of tBodyAcc-mean()-Y
-col 5: group average of tBodyAcc-mean()-Z
-col 6: group average of tBodyAcc-std()-X
-col 7: group average of tBodyAcc-std()-Y
-col 8: group average of tBodyAcc-std()-Z
-col 9: group average of tGravityAcc-mean()-X
-col10: group average of tGravityAcc-mean()-Y
-col11: group average of tGravityAcc-mean()-Z
-col12: group average of tGravityAcc-std()-X
-col13: group average of tGravityAcc-std()-Y
-col14: group average of tGravityAcc-std()-Z
-col15: group average of tBodyAccJerk-mean()-X
-col16: group average of tBodyAccJerk-mean()-Y
-col17: group average of tBodyAccJerk-mean()-Z
-col18: group average of tBodyAccJerk-std()-X
-col19: group average of tBodyAccJerk-std()-Y
-col20: group average of tBodyAccJerk-std()-Z
-col21: group average of tBodyGyro-mean()-X
-col22: group average of tBodyGyro-mean()-Y
-col23: group average of tBodyGyro-mean()-Z
-col24: group average of tBodyGyro-std()-X
-col25: group average of tBodyGyro-std()-Y
-col26: group average of tBodyGyro-std()-Z
-col27: group average of tBodyGyroJerk-mean()-X
-col28: group average of tBodyGyroJerk-mean()-Y
-col29: group average of tBodyGyroJerk-mean()-Z
-col30: group average of tBodyGyroJerk-std()-X
-col31: group average of tBodyGyroJerk-std()-Y
-col32: group average of tBodyGyroJerk-std()-Z
-col33: group average of tBodyAccMag-mean()
-col34: group average of tBodyAccMag-std()
-col35: group average of tGravityAccMag-mean()
-col36: group average of tGravityAccMag-std()
-col37: group average of tBodyAccJerkMag-mean()
-col38: group average of tBodyAccJerkMag-std()
-col39: group average of tBodyGyroMag-mean()
-col40: group average of tBodyGyroMag-std()
-col41: group average of tBodyGyroJerkMag-mean()
-col42: group average of tBodyGyroJerkMag-std()
-col43: group average of fBodyAcc-mean()-X
-col44: group average of fBodyAcc-mean()-Y
-col45: group average of fBodyAcc-mean()-Z
-col46: group average of fBodyAcc-std()-X
-col47: group average of fBodyAcc-std()-Y
-col48: group average of fBodyAcc-std()-Z
-col49: group average of fBodyAccJerk-mean()-X
-col50: group average of fBodyAccJerk-mean()-Y
-col51: group average of fBodyAccJerk-mean()-Z
-col52: group average of fBodyAccJerk-std()-X
-col53: group average of fBodyAccJerk-std()-Y
-col54: group average of fBodyAccJerk-std()-Z
-col55: group average of fBodyGyro-mean()-X
-col56: group average of fBodyGyro-mean()-Y
-col57: group average of fBodyGyro-mean()-Z
-col58: group average of fBodyGyro-std()-X
-col59: group average of fBodyGyro-std()-Y
-col60: group average of fBodyGyro-std()-Z
-col61: group average of fBodyAccMag-mean()
-col62: group average of fBodyAccMag-std()
-col63: group average of fBodyBodyAccJerkMag-mean()
-col64: group average of fBodyBodyAccJerkMag-std()
-col65: group average of fBodyBodyGyroMag-mean()
-col66: group average of fBodyBodyGyroMag-std()
-col67: group average of fBodyBodyGyroJerkMag-mean()
-col68: group average of fBodyBodyGyroJerkMag-std() 
+- col 1: activity: characters, 6 levels, "laying", "sitting", "standing", "walking", "walkingdownstairs", "walkingupstairs"
+- col 2: subject: numeric, 30 levels, 1:30
+- col 3: group average of tBodyAcc-mean()-X
+- col 4: group average of tBodyAcc-mean()-Y
+- col 5: group average of tBodyAcc-mean()-Z
+- col 6: group average of tBodyAcc-std()-X
+- col 7: group average of tBodyAcc-std()-Y
+- col 8: group average of tBodyAcc-std()-Z
+- col 9: group average of tGravityAcc-mean()-X
+- col10: group average of tGravityAcc-mean()-Y
+- col11: group average of tGravityAcc-mean()-Z
+- col12: group average of tGravityAcc-std()-X
+- col13: group average of tGravityAcc-std()-Y
+- col14: group average of tGravityAcc-std()-Z
+- col15: group average of tBodyAccJerk-mean()-X
+- col16: group average of tBodyAccJerk-mean()-Y
+- col17: group average of tBodyAccJerk-mean()-Z
+- col18: group average of tBodyAccJerk-std()-X
+- col19: group average of tBodyAccJerk-std()-Y
+- col20: group average of tBodyAccJerk-std()-Z
+- col21: group average of tBodyGyro-mean()-X
+- col22: group average of tBodyGyro-mean()-Y
+- col23: group average of tBodyGyro-mean()-Z
+- col24: group average of tBodyGyro-std()-X
+- col25: group average of tBodyGyro-std()-Y
+- col26: group average of tBodyGyro-std()-Z
+- col27: group average of tBodyGyroJerk-mean()-X
+- col28: group average of tBodyGyroJerk-mean()-Y
+- col29: group average of tBodyGyroJerk-mean()-Z
+- col30: group average of tBodyGyroJerk-std()-X
+- col31: group average of tBodyGyroJerk-std()-Y
+- col32: group average of tBodyGyroJerk-std()-Z
+- col33: group average of tBodyAccMag-mean()
+- col34: group average of tBodyAccMag-std()
+- col35: group average of tGravityAccMag-mean()
+- col36: group average of tGravityAccMag-std()
+- col37: group average of tBodyAccJerkMag-mean()
+- col38: group average of tBodyAccJerkMag-std()
+- col39: group average of tBodyGyroMag-mean()
+- col40: group average of tBodyGyroMag-std()
+- col41: group average of tBodyGyroJerkMag-mean()
+- col42: group average of tBodyGyroJerkMag-std()
+- col43: group average of fBodyAcc-mean()-X
+- col44: group average of fBodyAcc-mean()-Y
+- col45: group average of fBodyAcc-mean()-Z
+- col46: group average of fBodyAcc-std()-X
+- col47: group average of fBodyAcc-std()-Y
+- col48: group average of fBodyAcc-std()-Z
+- col49: group average of fBodyAccJerk-mean()-X
+- col50: group average of fBodyAccJerk-mean()-Y
+- col51: group average of fBodyAccJerk-mean()-Z
+- col52: group average of fBodyAccJerk-std()-X
+- col53: group average of fBodyAccJerk-std()-Y
+- col54: group average of fBodyAccJerk-std()-Z
+- col55: group average of fBodyGyro-mean()-X
+- col56: group average of fBodyGyro-mean()-Y
+- col57: group average of fBodyGyro-mean()-Z
+- col58: group average of fBodyGyro-std()-X
+- col59: group average of fBodyGyro-std()-Y
+- col60: group average of fBodyGyro-std()-Z
+- col61: group average of fBodyAccMag-mean()
+- col62: group average of fBodyAccMag-std()
+- col63: group average of fBodyBodyAccJerkMag-mean()
+- col64: group average of fBodyBodyAccJerkMag-std()
+- col65: group average of fBodyBodyGyroMag-mean()
+- col66: group average of fBodyBodyGyroMag-std()
+- col67: group average of fBodyBodyGyroJerkMag-mean()
+- col68: group average of fBodyBodyGyroJerkMag-std() 
 
 
